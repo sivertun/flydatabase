@@ -9,7 +9,7 @@ def create_database():
         with sqlite3.connect(PLANE_DATABASE_NAME) as database:
             cursor = database.cursor()
             
-            with open('skaperen_av_flydatabaser.sql', 'r') as sql_file:
+            with open('build.sql', 'r') as sql_file:
                 sql_script = sql_file.read()
                 cursor.executescript(sql_script)
                 database.commit()

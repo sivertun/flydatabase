@@ -1,7 +1,0 @@
-wowdfwafweew
-
-Vi har funnet ut at databasestrukturen vår ikke var helt optimal når det gjelder å lage flyruter.
-På grunn av at vi lagret Delrute som en svak klasse måtte vi lagre veldig lik data flere ganger i
-tabellen. For flyruter som inneholder mellomlandinger må man lagre delruten (mellom 2 flyplasser)
-på nytt for hver permutasjon av den hele flyruten. Skulle vi laget databasen på nytt senere hadde
-vi ikke valgt å gjøre Delrute til en svak klasse, for å kunne lagre data til flere flyruter.
