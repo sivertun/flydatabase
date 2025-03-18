@@ -64,7 +64,7 @@ CREATE TABLE IF NOT EXISTS "Billett" (
 	"eier"	INTEGER NOT NULL,
 	"setevalg_rad"	INTEGER,
 	"setevalg_flytype"	TEXT,
-	"setenummer"	TEXT,
+	"setenummer"	INTEGER,
 	PRIMARY KEY("referansenummer"),
 	FOREIGN KEY("billett_for_flyvning", "billett_for_flyrute") REFERENCES "Flyvning"("løpenummer", "flyrutenummer"),
 	FOREIGN KEY("setevalg_rad", "setevalg_flytype") REFERENCES "Rad"("radnummer", "flytypenavn"),
